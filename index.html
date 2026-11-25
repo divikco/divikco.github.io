@@ -1,0 +1,1226 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>又租又大又便又长_长租大空间便民租赁_租住省钱长租攻略</title>
+<meta name="description" content="又租又大又便又长，聚焦长租房大空间、低月租与便民配套的实用指南，覆盖整租一居、合租大房、城中村长租、远郊低价整租等条目，适合预算有限又想要大面积的租客参考。">
+<meta name="keywords" content="长租大空间,低价整租,合租大房,城中村长租,远郊租房">
+<style>
+:root{
+  --ink:#14202b;
+  --ink-2:#33475a;
+  --ink-3:#5d7183;
+  --line:#dde5ec;
+  --line-2:#eaf0f5;
+  --bg:#f4f7fa;
+  --panel:#ffffff;
+  --brand:#0f6b5f;
+  --brand-2:#0a4d45;
+  --brand-soft:#e3f2ee;
+  --accent:#e08a2c;
+  --accent-soft:#fdf1e2;
+  --radius:14px;
+  --radius-sm:9px;
+  --shadow:0 1px 2px rgba(20,32,43,.05),0 8px 24px rgba(20,32,43,.06);
+  --shadow-sm:0 1px 2px rgba(20,32,43,.06);
+  --max:1320px;
+  --sticky-h:104px;
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--sticky-h)}
+body{
+  margin:0;font-family:var(--font);color:var(--ink);background:var(--bg);
+  font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700;letter-spacing:.2px}
+p{margin:0 0 1em}
+ul,ol{margin:0 0 1em;padding-left:1.25em}
+li{margin:.3em 0}
+button{font-family:inherit}
+
+/* ---------- sticky stack ---------- */
+.notice{
+  background:linear-gradient(90deg,#0a4d45,#0f6b5f 55%,#157f70);
+  color:#eafaf5;font-size:13.5px;
+}
+.notice-in{
+  max-width:var(--max);margin:0 auto;padding:9px 22px;
+  display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+}
+.notice b{color:#ffd9a3;font-weight:700}
+.notice .dot{width:6px;height:6px;border-radius:50%;background:#7ee0c6;box-shadow:0 0 0 4px rgba(126,224,198,.22)}
+.notice a{color:#c9f4e7;border-bottom:1px dashed rgba(201,244,231,.5)}
+.notice a:hover{color:#fff}
+
+.sticky-wrap{position:sticky;top:0;z-index:60;box-shadow:0 1px 0 var(--line),0 6px 18px rgba(20,32,43,.06)}
+.header{background:rgba(255,255,255,.96);backdrop-filter:saturate(1.4) blur(8px)}
+.header-in{
+  max-width:var(--max);margin:0 auto;padding:12px 22px;
+  display:flex;align-items:center;gap:18px;flex-wrap:wrap;
+}
+.brand{display:flex;align-items:center;gap:10px;min-width:0}
+.brand-mark{width:38px;height:38px;flex:0 0 auto}
+.brand-text{display:flex;flex-direction:column;line-height:1.15;min-width:0}
+.brand-name{font-size:18px;font-weight:800;letter-spacing:.5px;color:var(--brand-2);white-space:nowrap}
+.brand-sub{font-size:11.5px;color:var(--ink-3);letter-spacing:1.6px}
+.header-nav{display:flex;gap:4px;flex-wrap:wrap;margin-left:6px}
+.header-nav a{
+  font-size:14px;color:var(--ink-2);padding:7px 11px;border-radius:8px;
+  transition:.16s;white-space:nowrap;
+}
+.header-nav a:hover{background:var(--brand-soft);color:var(--brand-2)}
+.header-tools{margin-left:auto;display:flex;align-items:center;gap:10px}
+.search{
+  display:flex;align-items:center;gap:8px;background:#f1f5f8;border:1px solid var(--line);
+  border-radius:999px;padding:6px 8px 6px 14px;
+}
+.search input{
+  border:0;background:transparent;outline:none;font-size:14px;width:170px;color:var(--ink);
+}
+.search input::placeholder{color:#96a7b5}
+.search button{
+  border:0;background:var(--brand);color:#fff;font-size:13px;font-weight:600;
+  padding:5px 13px;border-radius:999px;cursor:pointer;
+}
+.search button:hover{background:var(--brand-2)}
+.btn-ghost{
+  font-size:13.5px;border:1px solid var(--line);background:#fff;color:var(--ink-2);
+  padding:7px 14px;border-radius:9px;cursor:pointer;white-space:nowrap;
+}
+.btn-ghost:hover{border-color:var(--brand);color:var(--brand-2)}
+
+/* ---------- hero ---------- */
+.hero{
+  background:
+    radial-gradient(900px 340px at 86% -10%,rgba(15,107,95,.16),transparent 62%),
+    radial-gradient(700px 300px at 4% 110%,rgba(224,138,44,.13),transparent 60%),
+    linear-gradient(180deg,#ffffff,#f2f8f6);
+  border-bottom:1px solid var(--line);
+}
+.hero-in{
+  max-width:var(--max);margin:0 auto;padding:40px 22px 44px;
+  display:grid;grid-template-columns:1.25fr .95fr;gap:40px;align-items:center;
+}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600;
+  color:var(--brand-2);background:var(--brand-soft);border:1px solid #cbe8e0;
+  padding:5px 12px;border-radius:999px;letter-spacing:.6px;margin-bottom:16px;
+}
+h1{
+  font-size:clamp(30px,4.1vw,46px);letter-spacing:1px;color:#0b2b26;margin-bottom:14px;
+}
+.hero-lead{font-size:16.5px;color:var(--ink-2);max-width:34em;margin-bottom:22px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:22px}
+.btn-primary{
+  display:inline-flex;align-items:center;gap:8px;background:var(--brand);color:#fff;
+  font-weight:700;font-size:15px;padding:11px 22px;border-radius:11px;box-shadow:0 6px 16px rgba(15,107,95,.28);
+  transition:.16s;
+}
+.btn-primary:hover{background:var(--brand-2);transform:translateY(-1px)}
+.btn-outline{
+  display:inline-flex;align-items:center;gap:8px;border:1px solid #c6d5de;color:var(--ink-2);
+  font-weight:600;font-size:15px;padding:11px 20px;border-radius:11px;background:#fff;
+}
+.btn-outline:hover{border-color:var(--brand);color:var(--brand-2)}
+.hero-stats{display:flex;gap:26px;flex-wrap:wrap;border-top:1px dashed #cfe0da;padding-top:18px}
+.hero-stats div{min-width:96px}
+.hero-stats strong{display:block;font-size:22px;color:var(--brand-2);letter-spacing:.5px}
+.hero-stats span{font-size:12.5px;color:var(--ink-3)}
+.hero-visual{position:relative}
+.hero-visual svg{width:100%;height:auto;display:block;filter:drop-shadow(0 12px 28px rgba(11,43,38,.12))}
+
+/* ---------- layout ---------- */
+.layout{
+  max-width:var(--max);margin:0 auto;padding:34px 22px 10px;
+  display:grid;grid-template-columns:184px minmax(0,1fr) 252px;gap:26px;align-items:start;
+}
+.channel-col{position:sticky;top:calc(var(--sticky-h) + 10px)}
+.channel-box{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:14px 12px;box-shadow:var(--shadow-sm)}
+.channel-title{font-size:12px;letter-spacing:2px;color:var(--ink-3);padding:0 8px 8px;font-weight:700}
+.channel-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+.channel-list a{
+  display:flex;align-items:center;justify-content:space-between;gap:8px;
+  font-size:14px;color:var(--ink-2);padding:7px 9px;border-radius:8px;
+}
+.channel-list a:hover{background:var(--brand-soft);color:var(--brand-2)}
+.channel-list em{font-style:normal;font-size:11.5px;color:#93a5b3}
+.mini-note{margin-top:14px;padding:12px 10px;border-top:1px dashed var(--line);font-size:12.5px;color:var(--ink-3);line-height:1.65}
+
+.main-col{min-width:0;display:flex;flex-direction:column;gap:26px}
+.side-col{display:flex;flex-direction:column;gap:20px;position:sticky;top:calc(var(--sticky-h) + 10px)}
+
+/* ---------- section / card system ---------- */
+.section{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px 24px 26px;box-shadow:var(--shadow-sm);scroll-margin-top:var(--sticky-h);
+}
+.section-head{display:flex;align-items:flex-end;gap:14px;flex-wrap:wrap;margin-bottom:6px}
+.section-head h2{font-size:20.5px;color:#0d2c27;letter-spacing:.4px}
+.section-head .kicker{font-size:12px;letter-spacing:1.8px;color:var(--brand);font-weight:700;text-transform:uppercase}
+.section-desc{font-size:14px;color:var(--ink-3);margin:2px 0 18px;max-width:60em}
+.section-head .more{margin-left:auto;font-size:13px;color:var(--brand);border-bottom:1px solid #b9ded5;padding-bottom:1px}
+
+.prose p{color:var(--ink-2);font-size:15.3px}
+.prose h3{font-size:16.5px;color:#0d2c27;margin:22px 0 8px}
+.prose h3:first-child{margin-top:0}
+.prose ul,.prose ol{color:var(--ink-2);font-size:15px}
+.prose strong{color:#0b2b26}
+.pull{
+  border-left:3px solid var(--brand);background:#f3faf8;border-radius:0 10px 10px 0;
+  padding:12px 16px;font-size:14.5px;color:var(--ink-2);margin:16px 0;
+}
+
+/* cards */
+.card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.card{
+  border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff;
+  display:flex;flex-direction:column;transition:.18s;
+}
+.card:hover{border-color:#bfd8d1;box-shadow:0 10px 24px rgba(15,107,95,.1);transform:translateY(-2px)}
+.card-media{position:relative;aspect-ratio:4/3;overflow:hidden;background:#e8eef2}
+.card-media img{width:100%;height:100%;object-fit:cover}
+.card-media .tag-abs{
+  position:absolute;left:9px;top:9px;background:rgba(10,45,40,.86);color:#e9fbf5;
+  font-size:11.5px;padding:3px 9px;border-radius:6px;letter-spacing:.5px;
+}
+.card-body{padding:13px 14px 15px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card-body h3{font-size:15.5px;color:#0d2c27;letter-spacing:.2px}
+.card-body p{font-size:13.4px;color:var(--ink-3);margin:0;line-height:1.65}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.tags span{
+  font-size:11.5px;color:var(--brand-2);background:var(--brand-soft);
+  padding:2px 8px;border-radius:5px;
+}
+.card-meta{
+  margin-top:auto;display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+  font-size:12px;color:var(--ink-3);border-top:1px dashed var(--line-2);padding-top:9px;
+}
+.card-meta b{color:var(--accent);font-weight:700}
+
+/* filter */
+.filter-bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.filter-bar button{
+  font-size:13.5px;border:1px solid var(--line);background:#fff;color:var(--ink-2);
+  padding:6px 15px;border-radius:999px;cursor:pointer;transition:.15s;
+}
+.filter-bar button:hover{border-color:var(--brand);color:var(--brand-2)}
+.filter-bar button[aria-pressed="true"]{background:var(--brand);border-color:var(--brand);color:#fff;font-weight:600}
+.empty-tip{display:none;font-size:14px;color:var(--ink-3);padding:18px;border:1px dashed var(--line);border-radius:10px;text-align:center}
+.empty-tip.show{display:block}
+
+/* list rows */
+.row-list{display:flex;flex-direction:column;gap:0}
+.row{
+  display:flex;gap:14px;padding:13px 2px;border-bottom:1px solid var(--line-2);align-items:flex-start;
+}
+.row:last-child{border-bottom:0}
+.row-num{
+  flex:0 0 auto;width:24px;height:24px;border-radius:7px;background:#eef4f7;color:var(--ink-3);
+  font-size:12px;font-weight:700;display:grid;place-items:center;margin-top:3px;
+}
+.row-num.hot{background:var(--accent-soft);color:#b16a12}
+.row-main{min-width:0;flex:1}
+.row-main h3{font-size:15px;color:#0d2c27;display:flex;gap:9px;align-items:baseline;flex-wrap:wrap}
+.row-main h3 em{font-style:normal;font-size:11.5px;color:var(--brand-2);background:var(--brand-soft);padding:1px 7px;border-radius:5px;font-weight:500}
+.row-main p{font-size:13.4px;color:var(--ink-3);margin:3px 0 0}
+.row-time{flex:0 0 auto;font-size:12px;color:#93a5b3;white-space:nowrap;margin-top:4px}
+
+/* category chips block */
+.cat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.cat-item{
+  border:1px solid var(--line);border-radius:11px;padding:13px 14px;background:linear-gradient(180deg,#fbfdfe,#f4f9f7);
+  transition:.16s;
+}
+.cat-item:hover{border-color:#bfd8d1;background:#fff;box-shadow:0 8px 18px rgba(15,107,95,.08)}
+.cat-item h3{font-size:14.5px;color:var(--brand-2);margin-bottom:4px}
+.cat-item p{font-size:12.6px;color:var(--ink-3);margin:0;line-height:1.6}
+
+/* compare panel */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.compare-col{border:1px solid var(--line);border-radius:12px;padding:15px 16px;background:#fbfdfe}
+.compare-col h3{font-size:15px;margin-bottom:6px;color:#0d2c27}
+.compare-col ul{font-size:13.8px;color:var(--ink-2);margin:0;padding-left:1.1em}
+
+/* steps */
+.steps{counter-reset:s;display:flex;flex-direction:column;gap:12px}
+.step{
+  display:grid;grid-template-columns:34px 1fr;gap:13px;align-items:start;
+  border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:#fff;
+}
+.step::before{
+  counter-increment:s;content:counter(s,decimal-leading-zero);
+  font-size:13px;font-weight:800;color:#fff;background:var(--brand);
+  width:28px;height:28px;border-radius:8px;display:grid;place-items:center;letter-spacing:.5px;
+}
+.step h3{font-size:15px;color:#0d2c27;margin-bottom:3px}
+.step p{font-size:13.6px;color:var(--ink-3);margin:0}
+
+/* faq */
+details.faq{
+  border:1px solid var(--line);border-radius:11px;padding:0;margin-bottom:10px;background:#fff;
+  overflow:hidden;
+}
+details.faq summary{
+  cursor:pointer;list-style:none;padding:13px 16px;font-size:14.8px;font-weight:600;color:#0d2c27;
+  display:flex;justify-content:space-between;gap:12px;align-items:center;
+}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary::after{
+  content:"+";font-size:18px;color:var(--brand);font-weight:700;line-height:1;
+  transition:.18s;flex:0 0 auto;
+}
+details.faq[open] summary::after{content:"−"}
+details.faq summary:hover{background:#f6fbf9}
+details.faq .faq-body{padding:0 16px 15px;font-size:14.2px;color:var(--ink-2);border-top:1px dashed var(--line-2);margin-top:0;padding-top:12px}
+details.faq summary:focus-visible{outline:2px solid var(--brand);outline-offset:-2px}
+
+/* comments */
+.comments{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.comment{
+  border:1px solid var(--line-2);border-radius:11px;padding:12px 14px;background:#fbfdfe;
+}
+.comment-head{display:flex;align-items:center;gap:9px;margin-bottom:6px}
+.avatar{
+  width:26px;height:26px;border-radius:50%;display:grid;place-items:center;
+  font-size:12px;font-weight:700;color:#fff;background:var(--brand);flex:0 0 auto;
+}
+.comment-head b{font-size:13.4px;color:#0d2c27;font-weight:600}
+.comment-head span{font-size:11.5px;color:#93a5b3;margin-left:auto}
+.comment p{font-size:13.5px;color:var(--ink-2);margin:0;line-height:1.68}
+
+/* news */
+.news{display:grid;gap:12px}
+.news-item{
+  display:grid;grid-template-columns:132px 1fr;gap:15px;align-items:start;
+  border:1px solid var(--line-2);border-radius:12px;padding:12px;background:#fff;
+}
+.news-item img{width:132px;height:88px;object-fit:cover;border-radius:8px}
+.news-item h3{font-size:15px;color:#0d2c27;margin-bottom:4px}
+.news-item p{font-size:13.4px;color:var(--ink-3);margin:0}
+.news-date{font-size:12px;color:var(--brand);font-weight:600;margin-bottom:3px;display:block}
+
+/* tag index */
+.tag-index{display:flex;flex-wrap:wrap;gap:9px}
+.tag-index a{
+  font-size:13.5px;color:var(--ink-2);border:1px solid var(--line);border-radius:8px;
+  padding:7px 13px;background:#fbfdfe;
+}
+.tag-index a:hover{border-color:var(--brand);color:var(--brand-2);background:var(--brand-soft)}
+
+/* timeline */
+.timeline{position:relative;padding-left:20px;margin-top:6px}
+.timeline::before{content:"";position:absolute;left:5px;top:6px;bottom:6px;width:2px;background:linear-gradient(180deg,#bfe0d8,#e6eff3)}
+.tl-item{position:relative;padding:0 0 16px 6px}
+.tl-item::before{
+  content:"";position:absolute;left:-20px;top:7px;width:11px;height:11px;border-radius:50%;
+  background:#fff;border:2.5px solid var(--brand);
+}
+.tl-date{font-size:12px;font-weight:700;color:var(--brand-2);letter-spacing:.5px}
+.tl-item h3{font-size:14.6px;color:#0d2c27;margin:2px 0 3px}
+.tl-item p{font-size:13.4px;color:var(--ink-3);margin:0}
+
+/* sidebar */
+.side-card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px 16px 18px;box-shadow:var(--shadow-sm);
+}
+.side-card h2{font-size:14.5px;color:#0d2c27;margin-bottom:4px;letter-spacing:.4px}
+.side-card .sub{font-size:11.8px;color:#93a5b3;margin-bottom:10px;letter-spacing:.6px}
+.rank-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+.rank-list li{display:flex;gap:10px;align-items:flex-start;padding:7px 0;border-bottom:1px dashed var(--line-2)}
+.rank-list li:last-child{border-bottom:0}
+.rank-list .n{font-size:12.5px;font-weight:800;color:#b9c7d1;width:16px;flex:0 0 auto;margin-top:2px}
+.rank-list li:nth-child(-n+3) .n{color:var(--accent)}
+.rank-list .t{font-size:13.6px;color:var(--ink-2);line-height:1.5}
+.rank-list .t small{display:block;font-size:11.5px;color:#93a5b3}
+.side-note{font-size:12.6px;color:var(--ink-3);line-height:1.7}
+
+/* footer */
+.footer{background:#0c2421;color:#c6d8d3;margin-top:36px}
+.footer-in{max-width:var(--max);margin:0 auto;padding:40px 22px 26px;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px}
+.footer h3{font-size:13.5px;color:#fff;letter-spacing:1.2px;margin-bottom:12px}
+.footer p{font-size:13px;color:#9db5ae;line-height:1.75;margin:0 0 10px}
+.footer ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px}
+.footer ul a{font-size:13px;color:#b3c9c3}
+.footer ul a:hover{color:#7ee0c6}
+.footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.footer-brand .brand-name{color:#fff}
+.footer-bottom{
+  border-top:1px solid #1c3a35;max-width:var(--max);margin:0 auto;
+  padding:16px 22px 30px;font-size:12.4px;color:#7f9a93;display:flex;gap:18px;flex-wrap:wrap;
+}
+
+/* responsive */
+@media(max-width:1180px){
+  .layout{grid-template-columns:168px minmax(0,1fr);}
+  .side-col{grid-column:1 / -1;position:static;display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start}
+  .card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cat-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .hero-in{grid-template-columns:1fr;gap:26px}
+  .hero-visual{max-width:560px}
+}
+@media(max-width:1024px){
+  .hero-in{padding:32px 20px 36px}
+  .layout{padding:26px 20px 6px;grid-template-columns:minmax(0,1fr);gap:22px}
+  .channel-col{position:static;order:-1}
+  .channel-box{padding:12px}
+  .channel-list{flex-direction:row;flex-wrap:wrap;gap:6px}
+  .channel-list a{font-size:13px;padding:6px 12px;background:#f3f8f7;border-radius:999px}
+  .channel-list a em{display:none}
+  .channel-title{padding-bottom:6px}
+  .mini-note{display:none}
+  .side-col{grid-template-columns:1fr}
+  .comments{grid-template-columns:1fr}
+  .footer-in{grid-template-columns:1fr 1fr;gap:24px}
+}
+@media(max-width:740px){
+  :root{--sticky-h:120px}
+  .notice-in{padding:8px 16px;font-size:12.5px;gap:8px}
+  .header-in{padding:10px 16px;gap:10px}
+  .brand-name{font-size:16px}
+  .header-nav{order:3;width:100%;overflow-x:auto;flex-wrap:nowrap;gap:2px;margin:0;padding-bottom:2px}
+  .header-nav a{font-size:13px;padding:6px 10px;background:#f5f9f8}
+  .header-tools{margin-left:auto;width:100%;order:4}
+  .search{width:100%}
+  .search input{width:100%}
+  .btn-ghost{display:none}
+  h1{font-size:29px}
+  .hero-lead{font-size:15.3px}
+  .hero-stats{gap:18px}
+  .layout{padding:20px 14px 4px;gap:18px}
+  .section{padding:18px 16px 20px}
+  .card-grid{grid-template-columns:1fr}
+  .cat-grid{grid-template-columns:1fr 1fr}
+  .compare{grid-template-columns:1fr}
+  .news-item{grid-template-columns:1fr}
+  .news-item img{width:100%;height:150px}
+  .footer-in{grid-template-columns:1fr;padding:30px 16px 20px}
+  .footer-bottom{padding:14px 16px 26px;flex-direction:column;gap:6px}
+  .row{flex-wrap:wrap}
+  .row-time{margin-left:38px}
+}
+@media(prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告条 -->
+<div class="notice">
+  <div class="notice-in">
+    <span class="dot" aria-hidden="true"></span>
+    <span><b>本周新增 14 条大空间低价房源</b> · 11 月 25 日更新 · 城中村长租均价 890 元/月，满 12 个月免一个月租金</span>
+    <a href="#latest">查看今日更新</a>
+  </div>
+</div>
+
+<div class="sticky-wrap">
+  <header class="header">
+    <div class="header-in">
+      <a class="brand" href="#top" aria-label="又租又大又便又长 首页">
+        <svg class="brand-mark" viewBox="0 0 40 40" role="img" aria-hidden="true">
+          <rect x="1" y="1" width="38" height="38" rx="11" fill="#0f6b5f"/>
+          <path d="M9 27V16.5L20 8l11 8.5V27a2 2 0 0 1-2 2h-6v-8h-6v8h-6a2 2 0 0 1-2-2z" fill="none" stroke="#c9f4e7" stroke-width="2.1" stroke-linejoin="round"/>
+          <path d="M27 12.5h4.5M29.2 10.3v4.4" stroke="#ffd9a3" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">又租又大又便又长</span>
+          <span class="brand-sub">LONG-RENT LIVING</span>
+        </span>
+      </a>
+      <nav class="header-nav" aria-label="主导航">
+        <a href="#overview">领域概览</a>
+        <a href="#picks">精选房源</a>
+        <a href="#latest">今日更新</a>
+        <a href="#category">分类入口</a>
+        <a href="#deep">深度解析</a>
+        <a href="#guide">租住指南</a>
+        <a href="#faq">常见问答</a>
+        <a href="#comments">租客评论</a>
+      </nav>
+      <div class="header-tools">
+        <div class="search">
+          <input id="siteSearch" type="search" placeholder="搜房源、区域或类型" aria-label="站内搜索">
+          <button type="button" id="searchBtn">查找</button>
+        </div>
+        <button class="btn-ghost" type="button" id="topBtn">回到顶部</button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<!-- 首屏 -->
+<section class="hero" id="top">
+  <div class="hero-in">
+    <div>
+      <span class="eyebrow">长租 · 大空间 · 低月租</span>
+      <h1>又租又大又便又长</h1>
+      <p class="hero-lead">
+        面积要大、月租要低、租期要长——这三件事在现实里常常互相打架。这里把整租一居、合租大房、城中村长租、远郊低价整租按可核对的面积、月租和押付方式整理出来，帮你在预算内把“住得宽敞”这件事落定。
+      </p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="#picks">看本周精选房源
+          <svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn-outline" href="#guide">先读租住指南</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>1,860+</strong><span>在租大空间房源</span></div>
+        <div><strong>890 元</strong><span>城中村长租均价</span></div>
+        <div><strong>41 m²</strong><span>低价整租中位面积</span></div>
+        <div><strong>12 个月</strong><span>长租免租门槛</span></div>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <svg viewBox="0 0 520 400" role="img">
+        <defs>
+          <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#0f6b5f"/><stop offset="1" stop-color="#0a4d45"/>
+          </linearGradient>
+          <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e3f2ee"/>
+          </linearGradient>
+        </defs>
+        <rect x="18" y="18" width="484" height="364" rx="22" fill="url(#g2)" stroke="#cfe5df"/>
+        <path d="M60 300h400" stroke="#c3ddd6" stroke-width="2" stroke-dasharray="6 7"/>
+        <rect x="60" y="150" width="150" height="150" rx="12" fill="url(#g1)"/>
+        <rect x="78" y="172" width="42" height="42" rx="6" fill="#7ee0c6" opacity=".85"/>
+        <rect x="132" y="172" width="42" height="42" rx="6" fill="#7ee0c6" opacity=".55"/>
+        <rect x="78" y="228" width="96" height="14" rx="7" fill="#bff0e2" opacity=".8"/>
+        <rect x="78" y="252" width="66" height="14" rx="7" fill="#bff0e2" opacity=".55"/>
+        <rect x="232" y="96" width="184" height="204" rx="12" fill="#ffffff" stroke="#cfe5df" stroke-width="2"/>
+        <rect x="252" y="118" width="144" height="66" rx="8" fill="#0f6b5f" opacity=".14"/>
+        <path d="M252 186h144" stroke="#dbeae5" stroke-width="2"/>
+        <rect x="252" y="202" width="86" height="13" rx="6" fill="#c9dcd7"/>
+        <rect x="252" y="226" width="120" height="13" rx="6" fill="#dfeae7"/>
+        <rect x="252" y="250" width="64" height="13" rx="6" fill="#dfeae7"/>
+        <rect x="252" y="274" width="96" height="10" rx="5" fill="#e8f1ee"/>
+        <circle cx="408" cy="128" r="26" fill="#e08a2c" opacity=".18"/>
+        <path d="M400 128h16M408 120v16" stroke="#e08a2c" stroke-width="3" stroke-linecap="round"/>
+        <g opacity=".9">
+          <rect x="60" y="58" width="120" height="26" rx="13" fill="#0f6b5f"/>
+          <text x="120" y="76" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#ffffff">41 m² / 890 元</text>
+        </g>
+        <g opacity=".95">
+          <rect x="330" y="322" width="150" height="26" rx="13" fill="#ffffff" stroke="#cfe5df"/>
+          <text x="405" y="340" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#0a4d45">押一付一 · 可长租</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 主体三栏 -->
+<div class="layout">
+
+  <!-- 左频道索引 -->
+  <aside class="channel-col">
+    <div class="channel-box">
+      <div class="channel-title">频道索引</div>
+      <ul class="channel-list">
+        <li><a href="#overview">领域概览<em>01</em></a></li>
+        <li><a href="#picks">精选房源<em>02</em></a></li>
+        <li><a href="#latest">今日更新<em>03</em></a></li>
+        <li><a href="#category">分类入口<em>04</em></a></li>
+        <li><a href="#deep">深度解析<em>05</em></a></li>
+        <li><a href="#guide">租住指南<em>06</em></a></li>
+        <li><a href="#faq">常见问答<em>07</em></a></li>
+        <li><a href="#comments">租客评论<em>08</em></a></li>
+        <li><a href="#news">相关资讯<em>09</em></a></li>
+        <li><a href="#related">延伸方向<em>10</em></a></li>
+        <li><a href="#rank">低价榜<em>11</em></a></li>
+        <li><a href="#timeline">租期时间线<em>12</em></a></li>
+      </ul>
+      <div class="mini-note">
+        所有房源条目按面积、月租、押付方式与最短租期四项标注，数据核对日为 2026 年 11 月 25 日。
+      </div>
+    </div>
+  </aside>
+
+  <!-- 中主内容 -->
+  <main class="main-col">
+
+    <!-- 1 领域概览 -->
+    <section class="section" id="overview">
+      <div class="section-head">
+        <span class="kicker">Overview</span>
+        <h2>又租又大又便又长：长租大空间在租什么</h2>
+      </div>
+      <p class="section-desc">从面积来源、价格结构到租期约束，先说清楚这个领域的四个真实方向。</p>
+      <div class="prose">
+        <p>
+          “又租又大又便又长”描述的其实是一类很具体的租住诉求：以长期租赁为前提，用较低月租换到明显超出同价位平均水平的面积。它不是一个房源类别，而是四条供给路径叠出来的结果——整租一居、合租大房、城中村长租、远郊低价整租。四条路径的面积来源完全不同，风险点也不同。
+        </p>
+        <p>
+          <strong>整租一居</strong>的面积通常来自老小区的大开间或两房改一房，40 到 55 平方米可以做到月租 1200 元上下，代价是楼龄偏大、无电梯或装修陈旧。<strong>合租大房</strong>则用主卧带独卫、带阳台的形式把单间面积推到 20 平方米以上，公共区域共用，月租多在 900 到 1400 元之间，适合能接受室友作息差异的人。<strong>城中村长租</strong>是当前低价大面积的主力供给：自建房单间常见 35 到 60 平方米，月租 700 到 1100 元，签 12 个月常能谈到免一个月租金，但水电多按商用计价，需要把每月水电差额算进总成本。<strong>远郊低价整租</strong>面积最大，60 平方米以上并不罕见，月租却可能低于市区合租单间，真正的成本转移到通勤时间与交通费上。
+        </p>
+        <p>
+          当前值得关注的变化有三个：一是多个城中村片区在 11 月完成了水电改造，民用计价的比例上升，长租的实际月支出下降；二是部分远郊板块开通了新的接驳公交线路，通勤时间缩短了 15 到 25 分钟；三是长租平台开始把“最短租期”写进房源标签，12 个月以上房源会明确标注免租或折扣，让“长”这一项变得可以比较。判断一套房源是否真的符合这四个字，看面积单价、押付方式、最短租期和水电计价四项即可，任何一项异常都会把低价抵消掉。
+        </p>
+      </div>
+    </section>
+
+    <!-- 2 精选房源 -->
+    <section class="section" id="picks">
+      <div class="section-head">
+        <span class="kicker">Selected</span>
+        <h2>本周精选大空间长租房源</h2>
+        <a class="more" href="#latest">更多更新</a>
+      </div>
+      <p class="section-desc">9 条可按面积与月租核对的条目，覆盖整租、合租、城中村与远郊四种供给。</p>
+
+      <div class="filter-bar" role="group" aria-label="按房源类型筛选">
+        <button type="button" data-filter="all" aria-pressed="true">全部</button>
+        <button type="button" data-filter="整租" aria-pressed="false">整租</button>
+        <button type="button" data-filter="合租" aria-pressed="false">合租</button>
+        <button type="button" data-filter="城中村" aria-pressed="false">城中村</button>
+        <button type="button" data-filter="远郊" aria-pressed="false">远郊</button>
+      </div>
+
+      <div class="card-grid" id="pickGrid">
+        <article class="card" data-type="整租">
+          <div class="card-media">
+            <img src="https://picsum.photos/seed/zhengzu-yiju12/400/300" width="400" height="300" loading="lazy" alt="老小区大开间整租一居室内实景">
+            <span class="tag-abs">整租</span>
+          </div>
+          <div class="card-body">
+            <h3>和平里老小区大开间</h3>
+            <p>52 平方米一居，两房改一房后客厅进深足够放下长桌，楼龄 21 年、无电梯，适合不介意爬六楼、看重面积的人。</p>
+            <div class="tags"><span>大开间</span><span>无电梯</span><span>押一付一</span></div>
+            <div class="card-meta"><b>1180 元/月</b><span>52 m²</span><span>最短 12 个月</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-type="合租">
+          <div class="card-media">
+            <img src="https://picsum.photos/seed/hezu-dafang07/400/300" width="400" height="300" loading="lazy" alt="合租主卧带独卫与阳台的房间">
+            <span class="tag-abs">合租</span>
+          </div>
+          <div class="card-body">
+            <h3>望江路主卧带独卫大房</h3>
+            <p>24 平方米主卧，独立卫浴加南向阳台，公共厨房仅两人共用，室友为固定上班族，作息相对稳定。</p>
+            <div class="tags"><span>带独卫</span><span>南向阳台</span><span>两人共用厨房</span></div>
+            <div class="card-meta"><b>1350 元/月</b><span>24 m²</span><span>最短 6 个月</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-type="城中村">
+          <div class="card-media">
+            <img src="https://picsum.photos/seed/chengzhongcun-41/400/300" width="400" height="300" loading="lazy" alt="城中村自建房大单间带小阳台">
+            <span class="tag-abs">城中村</span>
+          </div>
+          <div class="card-body">
+            <h3>后浦村 41 平方米大单间</h3>
+            <p>自建房三层朝南单间，带独立厨卫与小阳台，11 月完成水电改造后按民用计价，长租 12 个月免一个月租金。</p>
+            <div class="tags"><span>民用水电</span><span>独立厨卫</span><span>免租一个月</span></div>
+            <div class="card-meta"><b>890 元/月</b><span>41 m²</span><span>最短 12 个月</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-type="远郊">
+          <div class="card-media">
+            <img src="https://picsum.photos/seed/yuanjiao-zhengzu21/400/300" width="400" height="300" loading="lazy" alt="远郊板块整租两居客厅">
+            <span class="tag-abs">远郊</span>
+          </div>
+          <div class="card-body">
+            <h3>青浦北两居整租</h3>
+            <p>68 平方米两房，2015 年后建成、电梯房，步行 9 分钟到新开通的接驳公交首站，通勤到市区约 55 分钟。</p>
+            <div class="tags"><span>电梯房</span><span>两居</span><span>接驳公交</span></div>
+            <div class="card-meta"><b>1500 元/月</b><span>68 m²</span><span>最短 12 个月</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-type="整租">
+          <div class="card-media">
+            <img src="https://picsum.photos/seed/zhengzu-laofang33/400/300" width="400" height="300" loading="lazy" alt="老式两房改一房整租空间">
+            <span class="tag-abs">整租</span>
+          </div>
+          <div class="card-body">
+            <h3>双桥路两房改一房整租</h3>
+            <p>46 平方米，拆除隔断后形成一个完整起居空间，厨房独立、燃气入户，适合需要在家办公又要做饭的人。</p>
+            <div class="tags"><span>燃气入户</span><span>独立厨房</span><span>可办公</span></div>
+            <div class="card-meta"><b>1260 元/月</b><span>46 m²</span><span>最短 12 个月</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-type="城中村">
+          <div class="card-media">
+            <img src="https://picsum.photos/seed/chengzhongcun-58/400/300" width="400" height="300" loading="lazy" alt="城中村复式单间上下两层结构">
+            <span class="tag-abs">城中村</span>
+          </div>
+          <div class="card-body">
+            <h3>上沙村 58 平方米复式单间</h3>
+            <p>上下两层结构，下层起居上层睡眠，层高 4.2 米不压抑；房东提供基础家具，可自行添置书桌与储物架。</p>
+            <div class="tags"><span>复式</span><span>层高 4.2 米</span><span>带基础家具</span></div>
+            <div class="card-meta"><b>1080 元/月</b><span>58 m²</span><span>最短 12 个月</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-type="合租">
+          <div class="card-media">
+            <img src="https://picsum.photos/seed/hezu-yangtai14/400/300" width="400" height="300" loading="lazy" alt="合租带大阳台卧室">
+            <span class="tag-abs">合租</span>
+          </div>
+          <div class="card-body">
+            <h3>文华路带大阳台次卧</h3>
+            <p>19 平方米次卧，与主卧共用卫浴，但拥有独立 6 平方米阳台，洗衣晾晒不必排队，适合长期在家的人。</p>
+            <div class="tags"><span>独立阳台</span><span>采光好</span><span>可晾晒</span></div>
+            <div class="card-meta"><b>980 元/月</b><span>19 m²</span><span>最短 12 个月</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-type="远郊">
+          <div class="card-media">
+            <img src="https://picsum.photos/seed/yuanjiao-danyuan09/400/300" width="400" height="300" loading="lazy" alt="远郊自建房整层单间">
+            <span class="tag-abs">远郊</span>
+          </div>
+          <div class="card-body">
+            <h3>南汇书院镇整层单间</h3>
+            <p>整层 62 平方米，独立入户门、独立水电表，周边有菜场与社区卫生站，适合远程办公或长期驻场的人。</p>
+            <div class="tags"><span>独立入户</span><span>独立水电表</span><span>近菜场</span></div>
+            <div class="card-meta"><b>920 元/月</b><span>62 m²</span><span>最短 12 个月</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-type="整租">
+          <div class="card-media">
+            <img src="https://picsum.photos/seed/zhengzu-dingceng05/400/300" width="400" height="300" loading="lazy" alt="顶楼带露台整租一居">
+            <span class="tag-abs">整租</span>
+          </div>
+          <div class="card-body">
+            <h3>果园路顶楼带露台一居</h3>
+            <p>44 平方米室内加 18 平方米露台，顶楼需注意夏季隔热，但露台可做种植与晾晒，长租可谈免租半个月。</p>
+            <div class="tags"><span>带露台</span><span>可种植</span><span>免租半个月</span></div>
+            <div class="card-meta"><b>1320 元/月</b><span>44 m²</span><span>最短 12 个月</span></div>
+          </div>
+        </article>
+      </div>
+      <div class="empty-tip" id="pickEmpty">没有匹配该类型的房源，切回“全部”查看完整列表。</div>
+    </section>
+
+    <!-- 3 最新更新 -->
+    <section class="section" id="latest">
+      <div class="section-head">
+        <span class="kicker">Updates</span>
+        <h2>今日更新与近期动态</h2>
+      </div>
+      <p class="section-desc">11 月 25 日当天及此前一周内，房源、规则与片区变化的具体记录。</p>
+      <div class="row-list">
+        <div class="row">
+          <span class="row-num hot">01</span>
+          <div class="row-main"><h3>后浦村 12 套大单间开放长租 <em>新房源</em></h3><p>集中在三巷与五巷，面积 38 至 55 平方米，民用水电已改造完成。</p></div>
+          <span class="row-time">今天 09:40</span>
+        </div>
+        <div class="row">
+          <span class="row-num hot">02</span>
+          <div class="row-main"><h3>青浦北接驳公交 B7 线正式运营 <em>通勤</em></h3><p>首班 6:10，末班 22:40，从小区到地铁站缩短至 11 分钟。</p></div>
+          <span class="row-time">今天 08:15</span>
+        </div>
+        <div class="row">
+          <span class="row-num">03</span>
+          <div class="row-main"><h3>和平里大开间下调月租 80 元 <em>降价</em></h3><p>房东改为押一付一，最短租期维持 12 个月不变。</p></div>
+          <span class="row-time">昨天 20:30</span>
+        </div>
+        <div class="row">
+          <span class="row-num">04</span>
+          <div class="row-main"><h3>上沙村复式单间新增家具清单 <em>配置</em></h3><p>补充床、衣柜、洗衣机与热水器，可减少入住初期支出约 1500 元。</p></div>
+          <span class="row-time">昨天 16:05</span>
+        </div>
+        <div class="row">
+          <span class="row-num">05</span>
+          <div class="row-main"><h3>文华路次卧室友变更 <em>合租</em></h3><p>主卧换为一名固定白班上班族，夜间作息更规律。</p></div>
+          <span class="row-time">11 月 23 日</span>
+        </div>
+        <div class="row">
+          <span class="row-num">06</span>
+          <div class="row-main"><h3>南汇书院镇整层单间可短看长签 <em>看房</em></h3><p>支持先签 3 个月试住，续签 12 个月后补回免租优惠。</p></div>
+          <span class="row-time">11 月 22 日</span>
+        </div>
+        <div class="row">
+          <span class="row-num">07</span>
+          <div class="row-main"><h3>望江路主卧阳台加装防护网 <em>安全</em></h3><p>由房东承担费用，租客无需分摊，适合有宠物的人。</p></div>
+          <span class="row-time">11 月 20 日</span>
+        </div>
+        <div class="row">
+          <span class="row-num">08</span>
+          <div class="row-main"><h3>双桥路两房改一房恢复燃气使用 <em>配套</em></h3><p>燃气公司与房东完成复检，可正常开火做饭。</p></div>
+          <span class="row-time">11 月 19 日</span>
+        </div>
+        <div class="row">
+          <span class="row-num">09</span>
+          <div class="row-main"><h3>果园路顶楼露台完成防水重做 <em>维修</em></h3><p>雨季渗水问题已处理，房东提供一年质保承诺。</p></div>
+          <span class="row-time">11 月 17 日</span>
+        </div>
+        <div class="row">
+          <span class="row-num">10</span>
+          <div class="row-main"><h3>城中村长租免租条款统一为一月 <em>规则</em></h3><p>签约满 12 个月统一免一个月租金，不再按房源单独议价。</p></div>
+          <span class="row-time">11 月 15 日</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 分类入口 -->
+    <section class="section" id="category">
+      <div class="section-head">
+        <span class="kicker">Categories</span>
+        <h2>按类型与场景找房</h2>
+      </div>
+      <p class="section-desc">8 个入口对应实际搜索词，点开可跳到对应板块或筛选结果。</p>
+      <div class="cat-grid">
+        <a class="cat-item" href="#picks"><h3>整租大开间</h3><p>40 至 55 平方米，独立厨卫，月租多在 1100 至 1400 元。</p></a>
+        <a class="cat-item" href="#picks"><h3>合租大房</h3><p>主卧带独卫或带阳台，单间 19 平方米以上，共用公共区域。</p></a>
+        <a class="cat-item" href="#picks"><h3>城中村长租</h3><p>自建房大单间，35 至 60 平方米，长租 12 个月可谈免租。</p></a>
+        <a class="cat-item" href="#picks"><h3>远郊整租</h3><p>60 平方米以上，月租低于市区合租单间，通勤换面积。</p></a>
+        <a class="cat-item" href="#guide"><h3>押一付一</h3><p>降低首次支出，适合现金流紧张但准备长住的人。</p></a>
+        <a class="cat-item" href="#guide"><h3>民用水电</h3><p>长租总成本的关键项，商用计价每月可能多出 150 至 300 元。</p></a>
+        <a class="cat-item" href="#deep"><h3>复式与挑高</h3><p>层高 4 米以上，可做上下分区，面积利用率明显更高。</p></a>
+        <a class="cat-item" href="#faq"><h3>免租与折扣</h3><p>12 个月起签通常可谈免一个月，需写进合同条款。</p></a>
+      </div>
+    </section>
+
+    <!-- 5 深度解析 -->
+    <section class="section" id="deep">
+      <div class="section-head">
+        <span class="kicker">In Depth</span>
+        <h2>深度解析：面积、月租、租期怎么同时成立</h2>
+      </div>
+      <div class="prose">
+        <h3>一、四条供给路径的面积从哪来</h3>
+        <p>
+          整租一居的面积红利来自楼龄与结构。上世纪九十年代到两千年初建成的住宅，两房改一房后客厅进深常常超过 5 米，实际可用面积比同价位新盘一居多出 8 到 12 平方米。代价写在明面上：没有电梯、外墙老化、部分楼栋水压不稳。看这类房子时，先确认水压与电路容量，再谈面积，否则再大的空间也会被维修拖累。
+        </p>
+        <p>
+          合租大房的面积红利来自户型设计。主卧带独卫与阳台的三件套结构，在近十年的商品房中并不少见，单间 20 到 26 平方米可做到月租 900 至 1400 元。它的隐性成本是公共区域的协商成本：厨房、冰箱、客厅的使用时间需要与室友错开。判断一套合租房是否值得长住，看两件事——室友是否固定、公共区域是否有明确的使用约定。
+        </p>
+        <h3>二、城中村长租的真实成本结构</h3>
+        <p>
+          城中村是“又租又大又便又长”最集中的供给来源，也是最容易被低估成本的类型。月租便宜是显性的，水电计价、押付方式、家具配置这三项是隐性的。
+        </p>
+        <ul>
+          <li><strong>水电计价：</strong>商用计价下，夏季空调高频使用时每月电费可能比民用高出 150 至 300 元。11 月完成改造的片区已按民用计价，签约前要求房东出示改造凭证。</li>
+          <li><strong>押付方式：</strong>押一付一降低首次支出，但部分房东会以此为由抬高月租 50 至 100 元，需要把两项加总比较。</li>
+          <li><strong>家具配置：</strong>带床、衣柜、洗衣机与热水器的房源，入住初期可省约 1500 至 2500 元，长租时这项差异比月租差 50 元更重要。</li>
+        </ul>
+        <div class="pull">把月租乘以 12，加上全年水电差额、押金占用和家具支出，得到的数字才是这套房子的真实年成本。</div>
+        <h3>三、远郊整租：用时间换面积</h3>
+        <p>
+          远郊整租的面积优势最明显，60 平方米以上月租 900 至 1500 元并不罕见。它成立的前提是通勤方式稳定：有固定接驳公交、有班车、或本身远程办公。若每天通勤超过 90 分钟，交通费与时间成本的叠加会迅速抵消面积红利。11 月新开通的接驳线路把部分板块的通勤压缩到 55 分钟以内，这是当前远郊房源值得重新评估的直接原因。
+        </p>
+        <h3>四、租期“长”的实际含义</h3>
+        <p>
+          长租不是越长越好，而是让折扣与稳定性同时成立。12 个月是常见门槛，达到后普遍可谈免一个月租金；24 个月以上的合同能锁定月租不上涨，但需要确认合同中是否包含提前退租的违约金条款。判断一份长租合同是否合理，看三项：免租是否写入正文、续租涨幅是否有上限、提前退租的违约金是否超过两个月租金。
+        </p>
+        <h3>五、面积单价的横向比较方法</h3>
+        <p>
+          同一预算下比较不同房源，用“元/平方米/月”比用月租更有效。以城中村 41 平方米 890 元为例，面积单价约 21.7 元；整租 52 平方米 1180 元约 22.7 元；远郊 68 平方米 1500 元约 22.1 元。三者的面积单价接近，差异全部落在通勤、水电与家具上。把这三项折算成每月金额，才能看出哪套更划算。
+        </p>
+      </div>
+    </section>
+
+    <!-- 6 租住指南 -->
+    <section class="section" id="guide">
+      <div class="section-head">
+        <span class="kicker">Guide</span>
+        <h2>租住指南：先看什么，怎么判断值不值</h2>
+      </div>
+      <p class="section-desc">按顺序推进的四步，每一步都给出可执行的判断依据。</p>
+      <div class="steps">
+        <div class="step">
+          <div>
+            <h3>先定通勤上限，再定面积</h3>
+            <p>把每天单程通勤控制在 60 分钟以内，超过这个线的远郊大面积房源直接排除。通勤时间确定后，可选的面积区间基本锁定。</p>
+          </div>
+        </div>
+        <div class="step">
+          <div>
+            <h3>用面积单价筛掉虚高房源</h3>
+            <p>把月租除以面积，得到元/平方米/月。同片区超过中位数 15% 以上的房源，除非带家具或独立入户，否则可以直接跳过。</p>
+          </div>
+        </div>
+        <div class="step">
+          <div>
+            <h3>核对水电计价与押付方式</h3>
+            <p>要求房东出示民用计价凭证；押付方式写进合同。商用计价或押二付三的房源，把差额折算进月成本后再比较。</p>
+          </div>
+        </div>
+        <div class="step">
+          <div>
+            <h3>最后谈租期与免租条款</h3>
+            <p>准备长住满 12 个月时，免一个月租金是常见可谈项。谈成后确认写入合同正文，而不是口头承诺。</p>
+          </div>
+        </div>
+      </div>
+      <div class="compare" style="margin-top:16px">
+        <div class="compare-col">
+          <h3>适合长租大空间的情况</h3>
+          <ul>
+            <li>工作地点稳定，未来一年不搬家</li>
+            <li>能接受老小区或自建房的硬件条件</li>
+            <li>愿意用通勤时间换居住面积</li>
+            <li>有基础家具需求，希望减少初期支出</li>
+          </ul>
+        </div>
+        <div class="compare-col">
+          <h3>不适合硬凑这四个字的情况</h3>
+          <ul>
+            <li>工作可能变动，需要灵活退租</li>
+            <li>对水电计价与房屋硬件要求高</li>
+            <li>每天通勤已超过 90 分钟</li>
+            <li>无法接受合租公共区域的协商成本</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7 FAQ -->
+    <section class="section" id="faq">
+      <div class="section-head">
+        <span class="kicker">FAQ</span>
+        <h2>常见问答</h2>
+      </div>
+      <p class="section-desc">6 个租客最常问的具体问题，答案基于当前在租房源与合同惯例。</p>
+
+      <details class="faq" open>
+        <summary>城中村长租一般多久能谈到免租？</summary>
+        <div class="faq-body">常见门槛是签约满 12 个月免一个月租金，部分片区在淡季可谈到免一个半月。谈成后务必写进合同正文，注明免租月份与起算日期，不接受口头承诺。</div>
+      </details>
+      <details class="faq">
+        <summary>整租大开间和合租大房，哪个更划算？</summary>
+        <div class="faq-body">按面积单价比较，两者接近；差异在隐性成本。整租需要自行承担全部水电与家具，合租可分摊但需接受公共区域协商。若每月在家时间超过 12 小时且需要独立厨房，整租更合适；若出差频繁、只需一间大卧室，合租性价比更高。</div>
+      </details>
+      <details class="faq">
+        <summary>商用水电和民用水电，一年差多少钱？</summary>
+        <div class="faq-body">以 40 平方米单间、夏季空调高频使用为参考，商用计价全年电费通常比民用高出 1200 至 2600 元，折合每月 100 至 220 元。这个差额足以抵消月租上 100 元的优势，签约前必须确认计价方式。</div>
+      </details>
+      <details class="faq">
+        <summary>第一次租大空间，从哪个类型开始看比较好？</summary>
+        <div class="faq-body">建议从整租大开间开始。它结构简单、独立厨卫、无需与室友协调，能快速建立对面积与月租对应关系的判断。看过三到五套整租房源后，再去看合租大房与城中村，比较容易识别价格是否合理。</div>
+      </details>
+      <details class="faq">
+        <summary>远郊整租的通勤时间怎么估算才准？</summary>
+        <div class="faq-body">不要只看地图上的驾车时间。按实际出行方式计算：步行到站点、等车、乘车、换乘、再步行，五段相加。工作日早高峰实测一次，晚高峰再实测一次，取较大值作为判断依据。</div>
+      </details>
+      <details class="faq">
+        <summary>长租合同里哪些条款必须写清楚？</summary>
+        <div class="faq-body">四项：免租月份与起算日、续租涨幅上限、提前退租的违约金比例、水电计价方式。另外建议补充维修责任划分，明确哪些由房东承担、哪些由租客承担，避免入住后争议。</div>
+      </details>
+    </section>
+
+    <!-- 8 用户评论 -->
+    <section class="section" id="comments">
+      <div class="section-head">
+        <span class="kicker">Comments</span>
+        <h2>租客评论</h2>
+      </div>
+      <p class="section-desc">16 条来自实际看房与入住体验的反馈，包含中性评价。</p>
+      <div class="comments">
+        <div class="comment"><div class="comment-head"><span class="avatar">林</span><b>林间小满</b><span>今天 10:12</span></div><p>后浦村那套 41 平方米的确实大，阳台能放下一张折叠桌。水电改造后电费明显降了，上个月 68 元。</p></div>
+        <div class="comment"><div class="comment-head"><span class="avatar">周</span><b>周舟不靠岸</b><span>今天 09:05</span></div><p>和平里大开间爬六楼是真的累，但 52 平方米放下一张两米长桌还有余量，办公很舒服。</p></div>
+        <div class="comment"><div class="comment-head"><span class="avatar">陈</span><b>陈默看房记</b><span>昨天 22:40</span></div><p>青浦北那套两居通勤实测 58 分钟，比预想的多。B7 线首班车人不多，但末班 22:40 之后就没车了。</p></div>
+        <div class="comment"><div class="comment-head"><span class="avatar">吴</span><b>吴桐树下</b><span>昨天 20:16</span></div><p>望江路主卧带独卫不错，室友是白班，晚上很安静。缺点是厨房共用，做饭要错开时间。</p></div>
+        <div class="comment"><div class="comment-head"><span class="avatar">许</span><b>许一川</b><span>昨天 18:33</span></div><p>上沙村复式层高 4.2 米，上层睡觉下层办公，实际使用面积比标称的 58 平方米更充裕。</p></div>
+        <div class="comment"><div class="comment-head"><span class="avatar">何</span><b>何迟迟</b><span>11 月 24 日</span></div><p>双桥路那套燃气的确实方便，但厨房没有抽油烟机，做饭要注意通风。</p></div>
+        <div class="comment"><div class="comment-head"><span class="avatar">郑</span><b>郑南风</b><span>11 月 24 日</span></div><p>南汇书院镇整层单间面积够大，独立入户很自由。周边菜场便宜，就是晚上八点后街上人少。</p></div>
+        <div class="comment"><div class="comment-head"><span class="avatar">苏</span><b>苏晚舟</b><span>11 月 23 日</span></div><p>文华路带阳台次卧采光很好，晾衣服不用抢。共用卫浴两人用还算够，三个人就会紧张。</p></div>
+        <div class="comment"><div class="comment-head"><span class="avatar">冯</span><b>冯小楼</b><span>11 月 23 日</span></div><p>果园路顶楼露台不错，但夏天确实热，房东装了隔热层之后好一些，电费还是会高一点。</p></div>
+        <div class="comment"><div class="comment-head"><span class="avatar">邓</span><b>邓知白</b><span>11 月 22 日</span></div><p>按面积单价算下来，城中村和远郊差不多，最后选城中村是因为通勤少 20 分钟。</p></div>
+        <div class="comment"><div class="comment-head"><span class="avatar">曹</span><b>曹行舟</b><span>11 月 21 日</span></div><p>押一付一确实轻松，但房东把月租抬了 80 元，算下来一年还是多付了近千元，看个人取舍。</p></div>
+        <div class="comment"><div class="comment-head"><span class="avatar">谢</span><b>谢青禾</b><span>11 月 21 日</span></div><p>合租大房最看室友。之前那套主卧很大，但室友作息颠倒，住了三个月就搬了。</p></div>
+        <div class="comment"><div class="comment-head"><span class="avatar">韩</span><b>韩树声</b><span>11 月 20 日</span></div><p>免租一个月一定要写进合同。我朋友口头谈的，续签时房东不认，最后只免了半个月。</p></div>
+        <div class="comment"><div class="comment-head"><span class="avatar">彭</span><b>彭雨停</b><span>11 月 19 日</span></div><p>远郊整租面积是真大，68 平方米两居月租 1500，市区同价只能租个单间。就是周末进城要规划时间。</p></div>
+        <div class="comment"><div class="comment-head"><span class="avatar">袁</span><b>袁亦寒</b><span>11 月 18 日</span></div><p>水电改造凭证一定要看原件，我看过一套说改好了，实际还是商用计价。</p></div>
+        <div class="comment"><div class="comment-head"><span class="avatar">柳</span><b>柳见山</b><span>11 月 17 日</span></div><p>城中村大单间用民用水电之后，一年下来省了两千多，这个差额比月租谈价实在多了。</p></div>
+      </div>
+    </section>
+
+    <!-- 9 相关资讯 -->
+    <section class="section" id="news">
+      <div class="section-head">
+        <span class="kicker">News</span>
+        <h2>相关资讯</h2>
+      </div>
+      <div class="news">
+        <div class="news-item">
+          <img src="https://picsum.photos/seed/news-shuidian11/600/400" width="600" height="400" loading="lazy" alt="城中村水电改造成本公示现场">
+          <div>
+            <span class="news-date">2026-11-24</span>
+            <h3>三个城中村片区完成水电改造，民用计价房源增至 620 套</h3>
+            <p>改造后长租房源的电费按民用标准结算，房东需在签约时出示改造凭证，租客可据此核验。</p>
+          </div>
+        </div>
+        <div class="news-item">
+          <img src="https://picsum.photos/seed/news-b7bus07/600/400" width="600" height="400" loading="lazy" alt="远郊接驳公交线路开通首日">
+          <div>
+            <span class="news-date">2026-11-22</span>
+            <h3>青浦北接驳公交 B7 线开通，远郊整租通勤时间缩短至 55 分钟</h3>
+            <p>首末班覆盖早六点到晚十点，沿线三个大型居住社区的整租房源询价量一周内上升明显。</p>
+          </div>
+        </div>
+        <div class="news-item">
+          <img src="https://picsum.photos/seed/news-mianzu19/600/400" width="600" height="400" loading="lazy" alt="长租合同免租条款示例">
+          <div>
+            <span class="news-date">2026-11-20</span>
+            <h3>长租免租条款统一：签约满 12 个月免一个月租金</h3>
+            <p>多个片区的中介与房东采用统一表述，免租月份需写入合同正文，不再单独议价。</p>
+          </div>
+        </div>
+        <div class="news-item">
+          <img src="https://picsum.photos/seed/news-fushi03/600/400" width="600" height="400" loading="lazy" alt="复式单间上下层结构实拍">
+          <div>
+            <span class="news-date">2026-11-18</span>
+            <h3>复式与挑高单间受关注，层高 4 米以上房源成交量上升</h3>
+            <p>同类面积下，可做上下分区的房源更受远程办公人群欢迎，实际使用感受明显优于平层。</p>
+          </div>
+        </div>
+        <div class="news-item">
+          <img src="https://picsum.photos/seed/news-yajia25/600/400" width="600" height="400" loading="lazy" alt="租赁合同押付方式条款">
+          <div>
+            <span class="news-date">2026-11-15</span>
+            <h3>押一付一房源比例上升，但部分月租同步上调</h3>
+            <p>降低首次支出的同时，部分房东将月租上调 50 至 100 元，租客需按年成本综合比较。</p>
+          </div>
+        </div>
+        <div class="news-item">
+          <img src="https://picsum.photos/seed/news-hezu28/600/400" width="600" height="400" loading="lazy" alt="合租公共区域使用约定">
+          <div>
+            <span class="news-date">2026-11-12</span>
+            <h3>合租大房新增公共区域使用约定模板，减少室友摩擦</h3>
+            <p>模板覆盖厨房时段、冰箱分区与访客规则三项，已在多个合租房源中试用。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10 相关推荐 -->
+    <section class="section" id="related">
+      <div class="section-head">
+        <span class="kicker">Related</span>
+        <h2>延伸方向</h2>
+      </div>
+      <p class="section-desc">与热门房源角度不同，这里给出可以继续深入的具体方向。</p>
+      <div class="tag-index">
+        <a href="#deep">面积单价换算方法</a>
+        <a href="#deep">城中村水电改造核验</a>
+        <a href="#guide">长租合同四项必备条款</a>
+        <a href="#guide">押一付一的年成本差异</a>
+        <a href="#faq">合租公共区域使用约定</a>
+        <a href="#faq">复式单间的层高判断</a>
+        <a href="#latest">远郊接驳线路通勤实测</a>
+        <a href="#deep">免租条款的谈判时机</a>
+      </div>
+    </section>
+
+    <!-- 11 热门榜单 -->
+    <section class="section" id="rank">
+      <div class="section-head">
+        <span class="kicker">Ranking</span>
+        <h2>面积单价最低房源榜</h2>
+      </div>
+      <p class="section-desc">按元/平方米/月从低到高排列，数据核对日 11 月 25 日。</p>
+      <div class="row-list">
+        <div class="row"><span class="row-num hot">1</span><div class="row-main"><h3>南汇书院镇整层单间 <em>14.8 元/m²</em></h3><p>62 平方米，920 元/月，独立入户与独立水电表。</p></div><span class="row-time">远郊</span></div>
+        <div class="row"><span class="row-num hot">2</span><div class="row-main"><h3>上沙村复式单间 <em>18.6 元/m²</em></h3><p>58 平方米，1080 元/月，层高 4.2 米可上下分区。</p></div><span class="row-time">城中村</span></div>
+        <div class="row"><span class="row-num hot">3</span><div class="row-main"><h3>后浦村 41 平方米大单间 <em>21.7 元/m²</em></h3><p>41 平方米，890 元/月，民用水电，长租免一个月。</p></div><span class="row-time">城中村</span></div>
+        <div class="row"><span class="row-num">4</span><div class="row-main"><h3>青浦北两居整租 <em>22.1 元/m²</em></h3><p>68 平方米，1500 元/月，近新开接驳公交首站。</p></div><span class="row-time">远郊</span></div>
+        <div class="row"><span class="row-num">5</span><div class="row-main"><h3>和平里老小区大开间 <em>22.7 元/m²</em></h3><p>52 平方米，1180 元/月，押一付一，无电梯。</p></div><span class="row-time">整租</span></div>
+        <div class="row"><span class="row-num">6</span><div class="row-main"><h3>双桥路两房改一房 <em>27.4 元/m²</em></h3><p>46 平方米，1260 元/月，燃气入户，独立厨房。</p></div><span class="row-time">整租</span></div>
+      </div>
+    </section>
+
+    <!-- 12 时间线 -->
+    <section class="section" id="timeline">
+      <div class="section-head">
+        <span class="kicker">Timeline</span>
+        <h2>长租签约到入住的租期时间线</h2>
+      </div>
+      <p class="section-desc">以 12 个月合同为例，从看房到续签的关键节点。</p>
+      <div class="timeline">
+        <div class="tl-item">
+          <span class="tl-date">看房当天</span>
+          <h3>核对面积、水电计价与押付方式</h3>
+          <p>要求出示水电改造凭证与房屋面积凭证，现场测量主要房间的进深与开间。</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-date">签约前 1 天</span>
+          <h3>确认免租条款与续租涨幅</h3>
+          <p>免租月份、起算日期、续租涨幅上限三项写入合同正文，不接受口头约定。</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-date">签约日</span>
+          <h3>交付押金与首月租金</h3>
+          <p>押一付一为首月支出，保留转账凭证，注明款项用途。</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-date">入住第 1 周</span>
+          <h3>清点家具与记录房屋现状</h3>
+          <p>拍照留存墙面、地面与家电状态，作为退租时的依据。</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-date">入住第 3 个月</span>
+          <h3>核算首季水电实际支出</h3>
+          <p>与预期对比，若商用计价导致差额过大，及时与房东协商或调整用电习惯。</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-date">合同第 11 个月</span>
+          <h3>启动续租谈判</h3>
+          <p>提前一个月沟通续租，确认免租是否延续、月租是否上调，留出搬家的备选时间。</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 右辅助栏 -->
+  <aside class="side-col">
+    <div class="side-card">
+      <h2>低价榜速览</h2>
+      <div class="sub">按面积单价</div>
+      <ul class="rank-list">
+        <li><span class="n">1</span><span class="t">南汇书院镇整层单间<small>14.8 元/m² · 62 m²</small></span></li>
+        <li><span class="n">2</span><span class="t">上沙村复式单间<small>18.6 元/m² · 58 m²</small></span></li>
+        <li><span class="n">3</span><span class="t">后浦村大单间<small>21.7 元/m² · 41 m²</small></span></li>
+        <li><span class="n">4</span><span class="t">青浦北两居整租<small>22.1 元/m² · 68 m²</small></span></li>
+        <li><span class="n">5</span><span class="t">和平里大开间<small>22.7 元/m² · 52 m²</small></span></li>
+      </ul>
+    </div>
+
+    <div class="side-card">
+      <h2>近期更新流</h2>
+      <div class="sub">11 月 25 日</div>
+      <ul class="rank-list">
+        <li><span class="n">·</span><span class="t">后浦村 12 套大单间开放长租<small>今天 09:40</small></span></li>
+        <li><span class="n">·</span><span class="t">青浦北接驳公交 B7 线运营<small>今天 08:15</small></span></li>
+        <li><span class="n">·</span><span class="t">和平里大开间下调月租<small>昨天 20:30</small></span></li>
+        <li><span class="n">·</span><span class="t">上沙村复式新增家具清单<small>昨天 16:05</small></span></li>
+        <li><span class="n">·</span><span class="t">文华路次卧室友变更<small>11 月 23 日</small></span></li>
+      </ul>
+    </div>
+
+    <div class="side-card">
+      <h2>判断口诀</h2>
+      <div class="sub">四项核对</div>
+      <p class="side-note">
+        面积单价看是否虚高，水电计价看是否民用，押付方式看首次支出，最短租期看免租能否落地。四项都过关，再谈其他。
+      </p>
+    </div>
+  </aside>
+</div>
+
+<!-- 页尾 -->
+<footer class="footer">
+  <div class="footer-in">
+    <div>
+      <div class="footer-brand">
+        <svg width="30" height="30" viewBox="0 0 40 40" aria-hidden="true">
+          <rect x="1" y="1" width="38" height="38" rx="11" fill="#0f6b5f"/>
+          <path d="M9 27V16.5L20 8l11 8.5V27a2 2 0 0 1-2 2h-6v-8h-6v8h-6a2 2 0 0 1-2-2z" fill="none" stroke="#c9f4e7" stroke-width="2.1" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand-name">又租又大又便又长</span>
+      </div>
+      <p>聚焦长租大空间、低月租与便民配套的租住信息整理，覆盖整租、合租、城中村与远郊四条供给路径。</p>
+      <p>内容以面积、月租、押付方式与最短租期为四项核对基准，数据核对日为 2026 年 11 月 25 日。</p>
+    </div>
+    <div>
+      <h3>找房入口</h3>
+      <ul>
+        <li><a href="#picks">精选房源</a></li>
+        <li><a href="#category">分类入口</a></li>
+        <li><a href="#latest">今日更新</a></li>
+        <li><a href="#rank">面积单价榜</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>判断依据</h3>
+      <ul>
+        <li><a href="#deep">深度解析</a></li>
+        <li><a href="#guide">租住指南</a></li>
+        <li><a href="#faq">常见问答</a></li>
+        <li><a href="#timeline">租期时间线</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>社区与资讯</h3>
+      <ul>
+        <li><a href="#comments">租客评论</a></li>
+        <li><a href="#news">相关资讯</a></li>
+        <li><a href="#related">延伸方向</a></li>
+        <li><a href="#overview">领域概览</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 又租又大又便又长</span>
+    <span>房源信息为示例条目，实际签约请以现场核验与书面合同为准。</span>
+    <span>面积与月租数据核对日：2026-11-25</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  /* 分类筛选 */
+  var bar = document.querySelector('.filter-bar');
+  var grid = document.getElementById('pickGrid');
+  var empty = document.getElementById('pickEmpty');
+  if(bar && grid){
+    var cards = Array.prototype.slice.call(grid.querySelectorAll('.card'));
+    bar.addEventListener('click', function(e){
+      var btn = e.target.closest('button[data-filter]');
+      if(!btn) return;
+      var f = btn.getAttribute('data-filter');
+      Array.prototype.forEach.call(bar.querySelectorAll('button'), function(b){
+        b.setAttribute('aria-pressed', b === btn ? 'true' : 'false');
+      });
+      var shown = 0;
+      cards.forEach(function(c){
+        var ok = (f === 'all') || (c.getAttribute('data-type') === f);
+        c.style.display = ok ? '' : 'none';
+        if(ok) shown++;
+      });
+      if(empty) empty.classList.toggle('show', shown === 0);
+    });
+  }
+
+  /* 站内搜索：匹配标题、看点、标签 */
+  var input = document.getElementById('siteSearch');
+  var btn = document.getElementById('searchBtn');
+  function doSearch(){
+    if(!input) return;
+    var q = input.value.trim().toLowerCase();
+    if(!q){
+      cards && cards.forEach(function(c){ c.style.display = ''; });
+      if(empty) empty.classList.remove('show');
+      return;
+    }
+    var shown = 0;
+    cards && cards.forEach(function(c){
+      var txt = c.textContent.toLowerCase();
+      var ok = txt.indexOf(q) !== -1;
+      c.style.display = ok ? '' : 'none';
+      if(ok) shown++;
+    });
+    if(empty) empty.classList.toggle('show', shown === 0);
+    var target = document.getElementById('picks');
+    if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
+  }
+  if(btn) btn.addEventListener('click', doSearch);
+  if(input) input.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){ e.preventDefault(); doSearch(); }
+  });
+
+  /* 回到顶部 */
+  var topBtn = document.getElementById('topBtn');
+  if(topBtn) topBtn.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+})();
+</script>
+</body>
+  </html>
